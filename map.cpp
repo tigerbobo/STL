@@ -14,7 +14,10 @@ void example(void)
 		map[6] = "6666";
 		map[7] = "7777";
 	}
-
-	id = iterator->first;
-	string = iterator->second;
+	
+	for (iterator = map.begin(); iterator != map.end(); iterator++)
+	{
+		id = iterator->first;
+		string = iterator->second;
+	}
 }
